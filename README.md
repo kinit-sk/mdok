@@ -13,7 +13,7 @@ python mdok-binary.py --train_file_path "subtask1/train.jsonl" --dev_file_path "
 Since due to licensing we cannot reshare MIX2k dataset (see the [paper](https://arxiv.org/abs/2503.15128) for details), use any out-of-distribution dataset for validation (checkpoint selection). In case of MIX2k, the checkpoint-11000 has been selected as the best for Qwen3-14B-Base.
 
 
-For mdok-multiclas, run the provided [mdok-multiclass.py](https://github.com/kinit-sk/mdok/blob/main/mdok-multiclass.py) with the following arguments:
+For mdok-multiclass, run the provided [mdok-multiclass.py](https://github.com/kinit-sk/mdok/blob/main/mdok-multiclass.py) with the following arguments:
 ```
 python mdok-multiclass.py --train_file_path "clef/train.jsonl" --dev_file_path "clef/dev.jsonl" --test_file_path "clef/test.jsonl" --model "Qwen/Qwen3-4B-Base" --prediction_file_path "test_predictions.csv"
 ```
