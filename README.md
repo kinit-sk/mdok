@@ -4,6 +4,13 @@ mdok detector for the "Voight-Kampff" Generative AI Authorship Verification at P
 The code for mdok-binary inference is available in [repo](https://github.com/DominikMacko/mdok).
 The model adapter of mdok-binary is available at [mdok HuggingFace](https://huggingface.co/DominikMacko/mdok).
 
+## mdok Training
+
+For mdok-multiclas, run the provided [mdok-multiclass.py](https://github.com/kinit-sk/mdok/blob/main/mdok-multiclass.py) with the following arguments:
+```
+python mdok-multiclass.py --train_file_path "clef/train.jsonl" --dev_file_path "clef/dev.jsonl" --test_file_path "clef/test.jsonl" --model "Qwen/Qwen3-4B-Base" --prediction_file_path "test_predictions.csv"
+```
+
 ## Cite
 If you use the model, code, data, or any information from this repository, please cite the paper(s):
 ```
